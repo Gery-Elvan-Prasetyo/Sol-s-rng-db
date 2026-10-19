@@ -24,6 +24,6 @@ grants select, alter, insert on sols_rng.* to 'gery'@'localhost';
  -- liat grants gini
  show grants for 'gery'@'localhost';
 
- -- kalo mau show grants di user yg lu pake gini
+ -- kalo mau show grants di user yg lu pake ginii
  show grants;
  

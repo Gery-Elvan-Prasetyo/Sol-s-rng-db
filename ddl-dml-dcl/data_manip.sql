@@ -14,4 +14,4 @@ select * from <nama_tb>;
 
 -- bisa ada variasi contoh
 select * from produk where id_produk =1; -- harusnya gaush dijelasin 
-select * from produk join stok; -- join bisa menggabungkan 2 table
+select * from produk join stok; -- join bisa menggabungkan 2 tablee

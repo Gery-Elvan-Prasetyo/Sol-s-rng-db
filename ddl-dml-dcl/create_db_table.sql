@@ -32,4 +32,4 @@ rename table <nama_tb1> to <nama_tb2>;
 desc table;
 
 -- kalo mau liat data yg ada di table (beda lagi ama liat kolom)
-select * from table; -- * itu milih semua kolom ya, klo mau tertentu silahkan saja ketik kolomnya
+select * from table; -- * itu milih semua kolom ya, klo mau tertentu silahkan saja ketik kolomnyaa
