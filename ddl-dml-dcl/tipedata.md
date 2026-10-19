@@ -1,1 +1,5 @@
 #
+
+int
+varchar
+char
