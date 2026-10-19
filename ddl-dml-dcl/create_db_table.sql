@@ -3,7 +3,7 @@
 -- bikin database jangan tulis "<>"
 create database <nama_db>; -- baiklah yang ini mudah *n
 -- lalu jangan lupa ketik
-use <nama_db>;
+use <nama_db>; --hmm tentu saja n*
 
 -- create table setelah nama kolom itu tipe data, liat selengkapnya di TABLE.md
 create table if not exists <nama_tb> ( -- if not exits? sepertinya opsional *n
@@ -23,7 +23,7 @@ alter table <nama_tb> drop column <nama_kolom>; --begitupun yang ini *n
 drop <nama_tb>; -- ini mudah *n
 
 -- truncate buat ngosongin isi
-truncate table <nama_tb> -- pertama kali dengan, sama dengan drop tapi ga bersihin isinya *n
+truncate table <nama_tb> -- pertama kali dengar, sama dengan drop tapi ga bersihin isinya *n
 
 -- rename table
 rename table <nama_tb1> to <nama_tb2>; -- yang ini juga mudah *n
