@@ -44,4 +44,5 @@ CREATE TABLE IF NOT EXISTS aura_biomes (
 INSERT IGNORE INTO aura_biomes (aura_id, biome_id)
 VALUES
     (10, 1),
-    (10, 4);
+    (10, 4),
+    (1, 1);
