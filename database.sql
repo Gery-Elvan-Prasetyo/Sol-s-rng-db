@@ -40,3 +40,8 @@ CREATE TABLE IF NOT EXISTS aura_biomes (
     FOREIGN KEY (aura_id) REFERENCES auras(id),
     FOREIGN KEY (biome_id) REFERENCES biome(id_biome)
 );
+
+INSERT IGNORE INTO aura_biomes (aura_id, biome_id)
+VALUES
+    (10, 1),
+    (10, 4);
