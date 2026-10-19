@@ -1,6 +1,6 @@
 create database if not exists sols_rng;
 use sols_rng;
-
+-- auras
 create table if not exists auras (
     id int auto_increment primary key,
     aura_name varchar(100) not null unique,
@@ -9,12 +9,14 @@ create table if not exists auras (
     foreign key(biome_id) references biome(id_biome)
 );
 
-insert ignore into auras (aura_name, rarity,biome_id)
+insert ignore into auras (aura_name, rarity)
 values
-('luminosity','1200000000',1),
-('sol','0',3),
+('luminosity','1200000000'),
+('sol','0'),
 ('aegis','825000000');
 
+
+-- biomes
 create table if not exists biome (
     id_biome int auto_increment primary key,
     biome_name varchar(100) not null unique,
@@ -28,3 +30,13 @@ values
 ('windy','1/500s','normal'),
 ('unavailable','0','un'),
 ('cyberspace', '1/5000', 'exclusive');
+
+USE sols_rng;
+
+CREATE TABLE IF NOT EXISTS aura_biomes (
+    aura_id INT NOT NULL,
+    biome_id INT NOT NULL,
+    PRIMARY KEY (aura_id, biome_id),
+    FOREIGN KEY (aura_id) REFERENCES auras(id),
+    FOREIGN KEY (biome_id) REFERENCES biome(id_biome)
+);
