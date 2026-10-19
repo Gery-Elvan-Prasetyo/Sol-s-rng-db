@@ -10,4 +10,5 @@ create table if not exists auras (
 insert ignore into auras (aura_name, rarity)
 values
 ('luminosity','1200000000'),
-('sol','0');
+('sol','0'),
+('aegis','825000000');
