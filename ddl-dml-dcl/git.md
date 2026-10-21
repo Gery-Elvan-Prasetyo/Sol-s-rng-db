@@ -1,0 +1,1 @@
+git itu untuk mempermudah hidup anda
